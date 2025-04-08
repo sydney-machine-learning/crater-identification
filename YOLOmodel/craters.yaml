@@ -1,0 +1,6 @@
+path: D:\study\Project5025\datasets
+train: images/train
+val: images/val
+test: images/test
+nc: 3
+names: ["Large crater", "Small crater", "Medium crater"]
