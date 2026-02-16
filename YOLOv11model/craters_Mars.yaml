@@ -1,0 +1,9 @@
+names:
+- Large crater
+- Small crater
+- Medium crater
+nc: 3
+path: /Users/jessie_guo/Downloads/ML Intern - Crater/Dataset/Mars
+test: images/test
+train: images/train
+val: images/val
