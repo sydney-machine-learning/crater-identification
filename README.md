@@ -6,16 +6,17 @@ Deep learning for crater identification
 ```
 CNNmodel/
 ├── CNNmodel.ipynb                # CNN uses the same dataset as ResNet50
+├── Dataset/
 
 Resnet50model/
 ├── Resnet50.ipynb                # ResNet50-based crater classifier
-├── datasets/
+├── Dataset/
 
 YOLOmodel/
 ├── YOLOv11.ipynb                 # YOLO-based crater detector
 ├── craters.yaml                  # YOLO dataset config
 ├── yolo11n.pt                    # Trained YOLOv11 weights
-├── datasets/                     # YOLO dataset folder (images + labels)
+├── Dataset/                     # YOLO dataset folder (images + labels)
 ├── runs/detect/                  # Inference output images
 │   ├── Predicted_1.jpg
 │   └── Predicted_2.jpg
@@ -32,19 +33,29 @@ You must manually place your dataset inside each model folder as follows:
 ### Folder structure for `Resnet50model/`, `CNNmodel/`, and `YOLOmodel/`:
 
 ```
-datasets/
-├── images/
-│   ├── train/
-│   ├── val/
-│   └── test/
-├── labels/
-│   ├── train/
-│   ├── val/
-│   └── test/
+Dataset/
+├── Mars
+|   ├── images
+│       ├── train/
+│       ├── val/
+│       └── test/
+|   ├── labels/
+│       ├── train/
+│       ├── val/
+│       └── test/
+├── Moon
+|   ├── images
+│       ├── train/
+│       ├── val/
+│       └── test/
+|   ├── labels/
+│       ├── train/
+│       ├── val/
+│       └── test/
 ```
 
 Each image should have a corresponding YOLO-format label file in the `labels/` folder.  
-Make sure all three folders (`Resnet50model/datasets/`, `CNNmodel/datasets/`, and `YOLOmodel/datasets/`) follow this structure.
+Make sure all three folders (`Resnet50model/Dataset/`, `CNNmodel/Dataset/`, and `YOLOmodel/Dataset/`) follow this structure.
 
 > CNN and ResNet50 share the same dataset structure, so you can copy the same folder into both.
 
@@ -78,9 +89,10 @@ Each notebook is standalone. To run:
 
 ## Example Outputs
 
-YOLO predictions can be found under `YOLOmodel/runs/detect/`.
+YOLO predictions can be found under `YOLOv11model/runs/detect/`.
 
 ## Authors
 
 - Yihan Ma (UNSW)
-- Jinghong Liang(UNSW)
+- Jinghong Liang (UNSW)
+- Jessie Guo (UNSW)
