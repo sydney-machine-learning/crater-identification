@@ -28,6 +28,9 @@ README.md                         # Project documentation
 
 ## Dataset Setup
 
+Original data: 
+*   Mars Reconnaissance Orbiter HiRISE data, NASA Planetary Data System: [link](https://pds-imaging.jpl.nasa.gov/search/?fq=MRO_IMAGE_CLASS%3Acrater&amp;fq=CRATER_COUNTS%3A%5B1%20TO%20131%5D&amp;fq=-ATLAS_THUMBNAIL_URL%3Abrwsnotavail.jpg&amp;q=crater)
+
 You must manually place your dataset inside each model folder as follows:
 
 ### Folder structure for `Resnet50model/`, `CNNmodel/`, and `YOLOmodel/`:
