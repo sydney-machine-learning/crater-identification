@@ -29,7 +29,7 @@ README.md                         # Project documentation
 ## Dataset Setup
 
 Original data: 
-*   Mars Reconnaissance Orbiter HiRISE data, NASA Planetary Data System: [link](https://pds-imaging.jpl.nasa.gov/search/?fq=MRO_IMAGE_CLASS%3Acrater&fq=-ATLAS_THUMBNAIL_URL%3Abrwsnotavail.jpg&q=*%3A*)
+*   Mars Reconnaissance Orbiter HiRISE data, NASA Planetary Data System: [link]([https://pds-imaging.jpl.nasa.gov/search/?fq=MRO_IMAGE_CLASS%3Acrater&fq=-ATLAS_THUMBNAIL_URL%3Abrwsnotavail.jpg&q=*%3A*](https://pds-imaging.jpl.nasa.gov/search/?fq=MRO_IMAGE_CLASS%3Acrater&fq=CRATER_COUNTS%3A%5B1%20TO%20131%5D&fq=-ATLAS_THUMBNAIL_URL%3Abrwsnotavail.jpg&q=crater)
 
 You must manually place your dataset inside each model folder as follows:
 
