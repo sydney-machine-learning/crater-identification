@@ -33,6 +33,10 @@ Original data:
 
 <img width="933" height="705" alt="Screenshot 2026-04-15 at 15 58 31" src="https://github.com/user-attachments/assets/e685118c-4fb1-40a4-89a6-5858f5319c3c" />
 
+*   Lunar crater dataset: [link](https://universe.roboflow.com/)
+
+ <img width="732" height="568" alt="Screenshot 2026-04-17 at 23 17 00" src="https://github.com/user-attachments/assets/e540752f-2cd2-44d6-a5f3-dd49f8415412" />
+
 You must manually place your dataset inside each model folder as follows:
 
 ### Folder structure for `Resnet50model/`, `CNNmodel/`, and `YOLOmodel/`:
@@ -59,7 +63,8 @@ Dataset/
 │       └── test/
 ```
 
-Each image should have a corresponding YOLO-format label file in the `labels/` folder.  
+Each image should have a corresponding YOLO-format label file in the `labels/` folder. The Mars images were originally too large and unprocessed, whereas the Moon images were already processed but too small. The Mars images were cropped, resized and annotated, and the Moon images were enlarged by adding black borders as padding and re-annotated. The annotations were done manually using LabelImg before exporting in YOLO format. 
+
 Make sure all three folders (`Resnet50model/Dataset/`, `CNNmodel/Dataset/`, and `YOLOmodel/Dataset/`) follow this structure.
 
 > CNN and ResNet50 share the same dataset structure, so you can copy the same folder into both.
@@ -70,20 +75,16 @@ Make sure all three folders (`Resnet50model/Dataset/`, `CNNmodel/Dataset/`, and 
   A simple CNN architecture to classify crater size categories.
 
 - **Resnet50.ipynb**  
-  A crater classifier based on the ResNet50 architecture, trained from scratch without using ImageNet weights. The top layers were customized for four-class classification.
+  A crater classifier based on the ResNet50 architecture, trained from scratch without using ImageNet weights. The top layers were customized for three-class classification.
 
 - **YOLOv11.ipynb**  
   Object detection model (YOLOv11) for locating and classifying craters.
 
 ## Dependencies
 
-Install dependencies with:
+Install key packages:
 
-pip install -r requirements.txt
-
-Or manually install key packages:
-
-pip install numpy opencv-python tensorflow keras matplotlib yolov5
+pip install numpy opencv-python tensorflow keras matplotlib ultralytics scikit-learn pandas torch
 
 ## Getting Started
 
