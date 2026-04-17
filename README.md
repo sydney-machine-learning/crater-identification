@@ -32,12 +32,12 @@ Original data:
 *   Mars Reconnaissance Orbiter HiRISE data, NASA Planetary Data System: [link](https://pds-imaging.jpl.nasa.gov/search/?fq=MRO_IMAGE_CLASS%3Acrater&fq=CRATER_COUNTS%3A%5B1%20TO%20131%5D&fq=-ATLAS_THUMBNAIL_URL%3Abrwsnotavail.jpg&q=crater)
 
 <img width="933" height="705" alt="Screenshot 2026-04-15 at 15 58 31" src="https://github.com/user-attachments/assets/e685118c-4fb1-40a4-89a6-5858f5319c3c" />
-
+<br>
 
 *   Lunar crater dataset: [link](https://universe.roboflow.com/)
 
  <img width="732" height="568" alt="Screenshot 2026-04-17 at 23 17 00" src="https://github.com/user-attachments/assets/e540752f-2cd2-44d6-a5f3-dd49f8415412" />
-
+<br>
 
 You must manually place your dataset inside each model folder as follows:
 
